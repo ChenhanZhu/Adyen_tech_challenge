@@ -1,0 +1,17 @@
+pspReferences=zch, chenhan_checkoutChallenge
+
+json_request = {
+      "merchantAccount": adyen_merchant_account,
+      "amount": {
+        "value": 1000,
+        "currency": "EUR"
+      },
+      "returnUrl": f"{host_url}/redirect?shopperOrder=myRef",
+      "reference": "chenhan_checkoutChallenge",
+      "countryCode": "NL"
+    }
+
+
+
+response_example
+{"amount": {"currency": "EUR", "value": 1000}, "countryCode": "NL", "expiresAt": "2024-08-02T07:59:36+02:00", "id": "CSBB87CE3B58E517C5", "merchantAccount": "AdyenRecruitmentCOM", "reference": "chenhan_checkoutChallenge", "returnUrl": "http://localhost:3000//redirect?shopperOrder=myRef", "shopperLocale": "en-US", "mode": "embedded", "sessionData": "Ab02b4c0!BQABAgAbwmfPJai84cxpA80nIsJx9zjNqk/nLRLD3rPgd8MnBk71Igfu8SOQPmH+4Ana65h5rrPhfAfb317/gmRbJ1pnSc+OxoMfMGXpyWsul848ly0H9dkEE5s0kg35EwVZOt5ZaUOAYSnTPqapJASKzbhloQYRlCX+Q1vubdy8klszEHmcrhactw1+I9ZKz4WfTVdskvr6SISEEbRBHOqs5eeVgOqc+MiUpsf0E5ubfcW5rcKmIKj0/l7nsJ40UrL+gv2l292qSQgE/+YqEPx2IwRxT2wbt/FAcV5RYH6aHvLQjXwtFAVZxwu2pMZLne6L8EWpTwdgyAOZty8WHa+ffk5EHLT1XbZ8D3idWCDebYhQxt5FkNNUkx++dpmsZzSgztKppnj0ooC0KBF9xdGSEU6t7GrFScVSQmrnmr1RS2/mjVBB22x3KCap3SIfLVtd8Ch09Dhi9+AQSBGsrPANJnmqvgI6Y0lqh6BUla1nT8X81yP3VepM8iSZP3xHiAbWWWudI0bdgjVhfKybhMV+/ZFabpHRV+Efih8XuxTR+QfJrhZsCB91EmKxU8wCritM41c7g7YmojHYer1u8ALy42OEswBj2neQQlyoYHBjYVqGyBHG+7pQg4uvC1yPvF3bES7YTRTn/1y9YNK71QVvkrgJgTbNhauDHZfDxanSFHinZwxsyuoh1kk5a3g+qxIASnsia2V5IjoiQUYwQUFBMTAzQ0E1MzdFQUVEODdDMjRERDUzOTA5QjgwQTc4QTkyM0UzODIzRDY4REFDQzk0QjlGRjgzMDVEQyJ9zALgXK9T36Thq2kamrb2NUmgvaASIGr94Ec8MH27atXEAr3Zh2Zw5z7ANEKYqggfE4aJZ+XyYla/M40LkftNP6ZwBDq4FjdfPtUqiCQR6RA8UIOEit/bNTnyQgKtZ/c5wPy+qcT0UMH2oo6TD/zhJ50lVwrjf7B+or6rNo34NR85xmgTWv3BS4bHH97RIM0QV7HZOWg+ViHRMonKNcPoKusXV9jAbuHuzaTn+9fUPvkXSOISNe3B/jYR40i8CCsqVmMRcHlg8wW3Xot+cv++82SiVcDRbR5Cg1KyNfYzUOthtsYJnPPagJCR8LrqBg0E66NWiqVC1XcGa7y7YDdvyQ/u2qpxQvnMSAutS07I1BwttYhypnmreokDPgjgRelJ4E2t7Z4Cta9/k4D5kal6eco419TzHxas1z30HzG+fRtwK+l3YRsq5iHK+H+5WSpUrUpzSgbzfGfg4yTeKdV1m7m/qnauc2l4SIJDxLWTARG/H8D+16Ky7/s9IHxgsie0lmy8Yn2sUSiPHuicsaJl6Ouf3xP2e4EvEaAMPEC+G4pNuTBg0GH3dGWbXwPgTZ4UNGlYIXOePnwoW70uhd4V9d7CGBCchSZER41zlkEftESi7m1YZowcXucA0vtUFm8Ry7z7dJP1VlQ3DQ=="}

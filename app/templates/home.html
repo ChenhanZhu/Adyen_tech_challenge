@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class='main-container'>
+        <div class="info">
+            <h1>Select your payment method</h1>
+        </div>
+        <ul class="integration-list">
+            <li class="integration-list-item">
+                <a class="integration-list-item-link" href="{{ url_for('checkout', integration="dropin") }}">
+                    <div class="title-container">
+                        <p class="integration-list-item-title">Drop-in</p>
+                    </div>
+                </a>
+            </li>
+            <li class="integration-list-item">
+                <a class="integration-list-item-link" href="{{ url_for('checkout', integration="card") }}">
+                    <div class="title-container">
+                        <p class="integration-list-item-title">Card</p>
+                    </div>
+                </a>
+            </li>
+            <li class="integration-list-item">
+                <a class="integration-list-item-link" href="{{ url_for('checkout', integration="ideal") }}">
+                    <div class="title-container">
+                        <p class="integration-list-item-title">iDEAL</p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+{% endblock %}
